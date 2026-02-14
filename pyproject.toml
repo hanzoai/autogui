@@ -46,8 +46,8 @@ dependencies = [
 keywords = ["gui", "automation", "test", "testing", "keyboard", "mouse", "cursor", "click", "press", "keystroke", "control"]
 
 [project.urls]
-Homepage = "https://github.com/hanzo-io/autogui"
-Issues = "https://github.com/hanzo-io/autogui/issues"
+Homepage = "https://github.com/hanzo.ai/autogui"
+Issues = "https://github.com/hanzo.ai/autogui/issues"
 Original = "https://github.com/asweigart/pyautogui"
 
 [tool.setuptools]
