@@ -1,19 +1,38 @@
-# autogui
+# LLM.md - Hanzo Autogui
 
-**Org:** hanzoai  ·  **Ecosystem:** hanzo  ·  **Path:** `/Users/a/work/hanzo/hanzoai/autogui`
-**Origin:** https://github.com/hanzoai/autogui.git
+## Overview
+Hanzo's fork of PyAutoGUI - GUI automation module for Python
 
-## Discovery
+## Tech Stack
+- **Language**: Python
 
-This file (`CLAUDE.md`) is the canonical agent-facing readme; `LLM.md` is a symlink to it. Update either name and both stay in sync.
+## Build & Run
+```bash
+uv sync
+uv run pytest
+```
 
-## Where to look first
+## Structure
+```
+autogui/
+  AGENTS.md
+  AUTHORS.txt
+  CHANGES.txt
+  GEMINI.md
+  LICENSE.txt
+  MANIFEST.in
+  Makefile
+  Pipfile
+  QWEN.md
+  README.md
+  docs/
+  hanzo_autogui.egg-info/
+  pyautogui/
+  pyproject.toml
+  setup.py
+```
 
-- `README.md` — human-facing overview (if present)
-- `package.json` / `Cargo.toml` / `pyproject.toml` / `go.mod` — language & deps
-- `.github/workflows/` — CI surface
-- `docs/` — extended docs (if present)
-
-## Sibling repos
-
-See the org-level `LLM.md` at `/Users/a/work/hanzo/hanzoai/LLM.md` for the full inventory of sibling repos and inter-repo dependencies.
+## Key Files
+- `README.md` -- Project documentation
+- `pyproject.toml` -- Python project config
+- `Makefile` -- Build automation
