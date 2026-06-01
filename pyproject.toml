@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hanzo-autogui"
+description = "Hanzo's fork of PyAutoGUI - GUI automation module for Python"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "BSD-3-Clause"}
+dynamic = ["version"]
+authors = [
+    {name = "Hanzo Team", email = "info@hanzo.ai"}
+]
+maintainers = [
+    {name = "Hanzo Team", email = "info@hanzo.ai"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications",
+    "Environment :: MacOS X",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "pymsgbox",
+    "hanzo-pytweening>=1.0.4",
+    "pyscreeze>=0.1.21",
+    "pygetwindow>=0.0.5",
+    "mouseinfo",
+    "pyobjc-core; platform_system=='Darwin'",
+    "pyobjc-framework-quartz; platform_system=='Darwin'",
+    "python3-Xlib; platform_system=='Linux' and python_version>='3.0'",
+]
+keywords = ["gui", "automation", "test", "testing", "keyboard", "mouse", "cursor", "click", "press", "keystroke", "control"]
+
+[project.urls]
+Homepage = "https://github.com/hanzo.ai/autogui"
+Issues = "https://github.com/hanzo.ai/autogui/issues"
+Original = "https://github.com/asweigart/pyautogui"
+
+[tool.setuptools]
+packages = ["pyautogui"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyautogui.__version__"}
