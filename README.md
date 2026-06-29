@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="autogui" width="880"></p>
+
 PyAutoGUI
 =========
 
